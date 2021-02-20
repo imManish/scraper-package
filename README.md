@@ -14,9 +14,14 @@ $ cd dadventures && source bin/activate
 ```
 $ pip install -r requirements.txt
 ```
+* Install chromium web driver for mac users
+<p align="left">
+<a href="https://chromedriver.storage.googleapis.com/index.html?path=88.0.4324.96/"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+</p>
+
+[chrome driver link]()
 
 ## Quick Start
-
 ```python
 from Dadventure.Scraper import Scraper
 # parameters could be facebook or yelp
