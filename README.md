@@ -31,5 +31,9 @@ Below is a list of resources with there available methods
 # read xls files
 client.facebookgb.read(file_path)
 ```
+### Result set 
+```python 
+all resultset data has been exported into xlsx format
+```
 
 
