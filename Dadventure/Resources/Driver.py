@@ -23,7 +23,7 @@ class Driver:
         # New Resources
         if term == 'facebook':
             self.facebookgb = FacebookGB(self,self.driver)
-            self.facebookhidden = FacebookHidden(self)
+            self.facebookhidden = FacebookHidden(self,self.driver)
         else:
             print("here")
             #self.yelp = Yelp(self)

@@ -35,5 +35,9 @@ client.facebookgb.read(file_path)
 ```python 
 all resultset data has been exported into xlsx format
 ```
-
+### FacebookHidden
+```python
+# execute hidden 
+client.facebookhidden.execute()
+```
 

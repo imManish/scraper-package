@@ -1,9 +1,9 @@
 import pandas as pd
 from bs4 import BeautifulSoup
+
 __author__ = "Dadventures"
+
 """ facebook Gb library """
-
-
 class FacebookGB():
     event_links = []
     Event_Link = []
@@ -30,7 +30,7 @@ class FacebookGB():
         """ calling extra function to generate resultset """
         self.parseArguments() # parse arguments
         self._driver.close() # driver close
-        self.exportResult() # export result
+        self.result() # export result
 
     def parseArguments(self):
         for i in self.event_links:
@@ -85,7 +85,7 @@ class FacebookGB():
                 self.Ticket_Purchase_Link.append("")
 
     """ export resultset in xls format"""
-    def exportResult(self):
+    def result(self):
         # Save work in excel file
         data = {}
         data = {'Event_Link': self.Event_Link, 'Event_Name': self.Event_Name, 'Event_Date': self.Event_Date, 'Days_Left': self.Days_Left,
