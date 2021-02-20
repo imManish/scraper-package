@@ -1,7 +1,7 @@
 from selenium import webdriver
 from sys import platform
-from Dadventure.Resources.classes.FacebookGB import FacebookGB
-from Dadventure.Resources.classes.FacebookHidden import FacebookHidden
+from Dadventure.Resources.classes.facebook.FacebookGB import FacebookGB
+from Dadventure.Resources.classes.facebook.FacebookHidden import FacebookHidden
 
 """ Exception class for unsupported platform """
 class UnsupportedPlatform(Exception):
@@ -22,7 +22,7 @@ class Driver:
 
         # New Resources
         if term == 'facebook':
-            self.facebookgb = FacebookGB(self)
+            self.facebookgb = FacebookGB(self,self.driver)
             self.facebookhidden = FacebookHidden(self)
         else:
             print("here")
