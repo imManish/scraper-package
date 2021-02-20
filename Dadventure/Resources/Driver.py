@@ -2,6 +2,7 @@ from selenium import webdriver
 from sys import platform
 from Dadventure.Resources.classes.facebook.FacebookGB import FacebookGB
 from Dadventure.Resources.classes.facebook.FacebookHidden import FacebookHidden
+from Dadventure.Resources.classes.yelp.YelpGB import YelpGB
 
 """ Exception class for unsupported platform """
 class UnsupportedPlatform(Exception):
@@ -22,8 +23,8 @@ class Driver:
 
         # New Resources
         if term == 'facebook':
-            self.facebookgb = FacebookGB(self,self.driver)
-            self.facebookhidden = FacebookHidden(self,self.driver)
+            self.facebookgb = FacebookGB(self, self.driver)
+            self.facebookhidden = FacebookHidden(self, self.driver)
         else:
             print("here")
-            #self.yelp = Yelp(self)
+            self.yelp = YelpGB(self, self.driver)

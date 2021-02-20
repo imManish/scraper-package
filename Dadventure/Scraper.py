@@ -19,7 +19,7 @@ class Scraper:
         instance.terms = terms
         return client_class(instance.terms)
 
-    def __init__(self):
+    def __init__(self) -> object:
         # This init method should return none
         pass
 
