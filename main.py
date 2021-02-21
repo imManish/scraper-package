@@ -13,7 +13,7 @@ class Main:
 
     def fbglobalevent(self):
         """ facbookgb get result set"""
-        self.scaper.facebookgb.read('/Users/manishj/Downloads/FB_event_links.xls')
+        self.scaper.facebookgb.read('E:\Data Scientiest\Machine Learning\Project\Other Project\Web Scraping\Facebook\FB_event_links.xlsx')
 
     def fbhiddenevent(self):
         """ hidden class attribute fetch """
@@ -28,7 +28,7 @@ class Main:
 
 m1 = Main('facebook')
 m1.fbglobalevent()
-m1.fbhiddenevent()
+#m1.fbhiddenevent()
 
 # m2 = main('yelp')
 # m2.yelpglobalevent()

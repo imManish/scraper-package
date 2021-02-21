@@ -17,7 +17,7 @@ class Driver:
         elif "darwin" in platform:
             self.driver = webdriver.Chrome(executable_path='/Users/manishj/Downloads/chromedriver')
         elif "win" in platform:
-            self.driver = webdriver.Chrome(executable_path=r"C:\chromedriver_win32\chromedriver.exe")
+            self.driver = webdriver.Chrome(executable_path=r"E:\Software\Data Science Software\Chrome Driver\chromedriver_win32\chromedriver.exe")
         else:
             raise UnsupportedPlatform
 
