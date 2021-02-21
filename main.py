@@ -5,7 +5,6 @@ __author__ = 'Manish Jakhode'
 
 class Main:
     """ initializing scrapper object """
-
     def __init__(self, terms):
         self.scaper = Scraper(terms)
 
@@ -15,9 +14,9 @@ class Main:
         """ facbookgb get result set"""
         self.scaper.facebookgb.read('/Users/manishj/Downloads/FB_event_links.xls')
 
-    def fbhiddenevent(self):
+    def fbhiddenevent(self,uri):
         """ hidden class attribute fetch """
-        self.scaper.facebookhidden.execute()
+        self.scaper.facebookhidden.read(uri)
 
     """ yelp resources """
 
@@ -27,8 +26,8 @@ class Main:
 
 
 m1 = Main('facebook')
-m1.fbglobalevent()
-m1.fbhiddenevent()
+#m1.fbglobalevent()
+m1.fbhiddenevent("https://www.facebook.com/events/325278428447630/")
 
 # m2 = main('yelp')
 # m2.yelpglobalevent()
