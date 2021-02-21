@@ -96,4 +96,4 @@ class FacebookGB():
         header = ['Event_Name', 'Event_Date', 'Days_Left', 'People_Responded', 'Hosted_By', 'Address', 'Event_Link',
                   'Descriptions', 'Tags', 'Ticket_Purchase_Link']
 
-        result.to_excel("Raw_Facebook_Event_Details.xlsx", columns=header, index=False)
+        result.to_excel("/Users/manishj/Downloads/result.xlsx", columns=header, index=False)
