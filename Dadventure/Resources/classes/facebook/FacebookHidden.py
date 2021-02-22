@@ -4,11 +4,10 @@ __author__ = "Dadventures"
 
 """ Facebook Hidden scrapping data """
 class FacebookHidden():
-    def __init__(self, arg, driver):
-        self._driver = driver
+    def __init__(self, arg):
+        self._driver = arg.driver
 
     def read(self, uri):
-        print(uri)
         self._driver.get(uri)
         # Note: xpath sometimes get change. If so, please change the xpath address or manually click on "Accept All"
         #self._driver.find_element_by_xpath('//*[@id="u_0_n_Pz"]').click()

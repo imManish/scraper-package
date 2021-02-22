@@ -17,8 +17,8 @@ class FacebookGB():
     Tags = []
     Ticket_Purchase_Link = []
 
-    def __init__(self, arg, driver):
-        self._driver = driver
+    def __init__(self, arg):
+        self._driver = arg.driver
 
     def read(self, file_path):
         """ Reading the Excel file (FB_event_links) consisting of FB Event links from Desktop"""
